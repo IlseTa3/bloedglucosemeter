@@ -1,0 +1,74 @@
+{
+  "bloedglucosemetingen": [
+    {
+      "Id": 1,
+      "Datum": "15/11/2022",
+      "BgVoorMT": 75,
+      "MT": "Handvol walnoten",
+      "BgNaMT": 83
+    },
+    {
+      "Id": 2,
+      "Datum": "10/12/2022",
+      "BgVoorMT": 81,
+      "MT": "Een koffiekoek croissant met chocolade",
+      "BgNaMT": 125
+    },
+    {
+      "Id": 3,
+      "Datum": "15/01/2023",
+      "BgVoorMT": 110,
+      "MT": "Een suikerwafel",
+      "BgNaMT": 125
+    },
+    {
+      "Id": 4,
+      "Datum": "7/02/2023",
+      "BgVoorMT": 95,
+      "MT": "Slaatje met walnoten, olijfolie en zongedroogde tomaten",
+      "BgNaMT": 88
+    },
+    {
+      "Id": 5,
+      "Datum": "15/02/2023",
+      "BgVoorMT": 90,
+      "MT": "Steak friet met slaatje en mayonaise",
+      "BgNaMT": 110
+    },
+    {
+      "Id": 6,
+      "Datum": "25/02/2023",
+      "BgVoorMT": 88,
+      "MT": "Koffie met boter",
+      "BgNaMT": 86
+    },
+    {
+      "Id": 7,
+      "Datum": "1/03/2023",
+      "BgVoorMT": 85,
+      "MT": "Omelette met kaas en spek",
+      "BgNaMT": 80
+    },
+    {
+      "Id": 8,
+      "Datum": "3/03/2023",
+      "BgVoorMT": 83,
+      "MT": "Griekse yoghurt met mascarpone en chocoladeschilfers en kanneel",
+      "BgNaMT": 90
+    },
+    {
+      "Id": 9,
+      "Datum": "8/03/2023",
+      "BgVoorMT": 80,
+      "MT": "Koffie zwart",
+      "BgNaMT": 80
+    },
+    {
+      "Id": 10,
+      "Datum": "22/05/2023",
+      "MT": "pizza hawaii",
+      "BgVoorMT": "80",
+      "BgNaMT": "158"
+    }
+  ]
+}

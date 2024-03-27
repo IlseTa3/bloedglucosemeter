@@ -1,0 +1,144 @@
+$achtergrondKleur: rgb(245, 237, 211);
+$titelKleur: rgb(122, 6, 6);
+$marginBottom: 0.5em;
+$achtergrondKleurFooter: rgb(165, 42, 42);
+$kleurTekstFooter: rgb(255, 255, 255);
+$kleurButton: rgb(236, 128, 55);
+
+:root {
+  font-size: 62.5%;
+  background-color: $achtergrondKleur;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Commissioner", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 85rem;
+  border-top: 3px solid rgb(185, 49, 49);
+}
+
+h1,
+h2 {
+  color: $titelKleur;
+  font-family: "Fraunces", serif;
+  line-height: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-top: auto;
+  margin-bottom: $marginBottom;
+}
+
+h2 {
+  margin-top: 3em;
+  margin-bottom: $marginBottom;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container-info {
+  font-family: "Commissioner", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.table {
+  font-size: 1.5rem;
+  padding: 1em;
+  text-align: right;
+}
+.tableHeader {
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  color: $titelKleur;
+  text-align: center;
+}
+
+td {
+  border-bottom: 1px solid;
+}
+
+//Grafiek
+.chart {
+  max-width: 100%;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+//button om nieuwe data toe te voegen
+.btn {
+  font-size: 1rem;
+  padding: 0;
+  width: 2.5rem;
+  text-align: center;
+  border: 0.1rem solid $kleurButton;
+  text-decoration: none;
+  color: $kleurButton;
+  font-weight: 500;
+  background-color: rgb(234, 227, 227);
+}
+
+.btn-nieuw,
+.btn-del {
+  font-size: 2.5rem;
+  padding: 0;
+  width: 8rem;
+  text-align: center;
+  border: 0.1rem solid $kleurButton;
+  text-decoration: none;
+  color: $kleurButton;
+  font-weight: 500;
+  background-color: rgb(234, 227, 227);
+}
+
+.btn-del {
+  margin-top: 2em;
+}
+
+.btn:hover,
+.btn-nieuw:hover,
+.btn-del:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+//footer
+footer {
+  font-size: 0.5rem;
+  margin-top: 3em;
+  background-color: $achtergrondKleurFooter;
+  color: $kleurTekstFooter;
+}
+
+//formulier form.html
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-family: "Commissioner", sans-serif;
+}
+input {
+  margin-bottom: 1rem;
+  width: 13rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 $kleurButton;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner&family=Fraunces:opsz,wght@9..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>BG-CHECKER</title>
+  </head>
+  <body>
+    <header><h1>BG-CHECKER</h1></header>
+    <h2 id="alleData">Overzicht Bloedglucosemetingen</h2>
+    <section class="container-info">
+      <article class="info">
+        <table class="table">
+          <thead class="tableHeader">
+            <tr>
+              <td>Id</td>
+              <td>Datum</td>
+              <td>Maaltijd(MT)</td>
+              <td>Meting Voor MT</td>
+              <td>Meting Na MT</td>
+            </tr>
+          </thead>
+          <tbody id="data"></tbody>
+        </table>
+      </article>
+      <article class="info">
+        <h2>Nieuwe meting:</h2>
+        <form id="form" method="post">
+          <label for="">Datum: </label>
+          <input type="text" id="Datum" /><br />
+          <label for="">Maaltijd: </label><input type="text" id="Mt" /><br />
+          <label for="">Bg Voor MT: </label
+          ><input type="text" id="BgVoorMt" /><br />
+          <label for="">Bg Na MT: </label>
+          <input type="text" id="BgNaMt" /><br />
+          <input class="btn-nieuw" type="submit" value="Add" />
+          <input id="del" class="btn-del" type="submit" value="Delete" />
+        </form>
+      </article>
+    </section>
+    <section class="chart" id="grafiek">
+      <canvas id="myChart"></canvas>
+    </section>
+    <footer>
+      <p class="eigendom">
+        Deze website is eigendom van &copy;Ilse Tastenhoye - 2023
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="./Javascript/index.js"></script>
+    <script type="module" src="./Javascript/Modules/OphalenData.js"></script>
+    <script type="module" src="Javascript/Modules/PostenData.js"></script>
+    <script type="module" src="Javascript/Modules/DeletenData.js"></script>
+    <script type="module" src="Javascript/Modules/GrafiekData.js"></script>
+  </body>
+</html>
